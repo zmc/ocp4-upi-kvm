@@ -26,6 +26,7 @@ variable "cluster_id" {
 }
 
 variable "dns_forwarders" {}
+variable "ntp_server" {}
 variable "gateway_ip" {}
 variable "cidr" {}
 variable "allocation_pools" {}

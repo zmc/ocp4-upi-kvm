@@ -34,6 +34,7 @@ locals {
         storage_type            = var.storage_type
         log_level               = var.log_level
         release_image_override  = var.release_image_override
+        ntp_server              = var.ntp_server
     }
 
     upgrade_vars = {

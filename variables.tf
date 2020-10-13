@@ -219,6 +219,10 @@ variable "dns_forwarders" {
     default = "8.8.8.8; 8.8.4.4"
 }
 
+variable "ntp_server" {
+    default = ""
+}
+
 variable "storage_type" {
     #Supported values: nfs (other value won't setup a storageclass)
     default = "none"

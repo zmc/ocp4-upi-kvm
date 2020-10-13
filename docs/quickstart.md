@@ -90,6 +90,7 @@ Update the following variables specific to OCP.
  * `install_playbook_tag` : (Optional) [ocp4-playbooks](https://github.com/ocp-power-automation/ocp4-playbooks) ansible playbooks version to checkout.
  * `pull_secret_file` : (Optional) Location of the pull-secret file to be used. Default path is 'data/pull-secret.txt'.
  * `dns_forwarders` : (Optional) External DNS servers to forward DNS queries that cannot resolve locally. Eg: `"8.8.8.8; 9.9.9.9"`.
+ * `ntp_server`: (Optional) External NTP server to use if necessary e.g. `"ntp.example.com"`
 
 ### Setup Storage Variables
 

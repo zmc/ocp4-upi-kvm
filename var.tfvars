@@ -35,6 +35,7 @@ cluster_id_prefix           = "test"
 cluster_id                  = ""
 
 dns_forwarders              = "1.1.1.1; 9.9.9.9"
+ntp_server                  = ""
 installer_log_level         = "info"
 ansible_extra_options       = "-v"
 

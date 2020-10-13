@@ -24,6 +24,7 @@ locals {
         cluster_id      = var.cluster_id
         bastion_ip      = var.bastion_ip
         forwarders      = var.dns_forwarders
+        ntp_server      = var.ntp_server
         gateway_ip      = var.gateway_ip
         netmask         = cidrnetmask(var.cidr)
         broadcast       = cidrhost(var.cidr,-1)

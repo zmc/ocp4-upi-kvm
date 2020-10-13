@@ -31,6 +31,13 @@ workers:
     ipaddr: "${w.ip}"
     macaddr: "${w.mac}"
 %{ endfor ~}
+%{ if ntp_server != "" ~}
+chronyconfig:
+  enabled: true
+  content:
+    - server: ${ntp_server}
+      options: iburst
+%{ endif ~}
 
 ppc64le: true
 ssh_gen_key: false

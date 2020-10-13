@@ -31,6 +31,8 @@ variable "private_key" {}
 variable "ssh_agent" {}
 variable "jump_host" { default = "" }
 
+variable "ntp_server" {}
+
 variable "bootstrap_ip" {}
 variable "master_ips" {}
 variable "worker_ips" {}
